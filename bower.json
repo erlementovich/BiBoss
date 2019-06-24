@@ -1,0 +1,17 @@
+{
+  "name": "biBoss",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Artem <Erlementovich@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/erlementovich/BiBoss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
