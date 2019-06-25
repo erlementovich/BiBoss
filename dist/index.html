@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BiBoss</title>
+    <title>biBoss</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <div class="logo">
+        <img src="img/Logo-top.png" alt="logo">
+    </div>
 
+
+    <div class="wrapper">
+
+
+        <header>
+            <h3 id="biBoss">Поставь ссылку на БИБОСС</h3>
+            <h1 id="ball">Заработай баллы!</h1>
+            <div class="mac">
+                <div class="href1"><a href="#">Франшиза Dunkin' Donuts на БИБОСС</a></div>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="info">
+                <p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании </p>
+                <ul>
+                    <li>Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</li>
+                    <li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
+                    <li>Кнопка “Нравится франшиза” + счетчик популярности</li>
+                </ul>
+            </div>
+
+            <div class="why">
+                <p>Зачем нужны <a href="#">баллы</a>?</p>
+                <h4>Больше баллов — выше позиция в выдаче категории</h4>
+            </div>
+
+            <div class="rules-cost">
+                <div class="rules">
+                    <h4>Правила размещения ссылки</h4>
+                    <ul>
+                        <li>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt; )</li>
+                        <li>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта</li>
+                        <li>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу</li>
+                        <li>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+                    </ul>
+                </div>
+                <div class="cost">
+                    <h4>Стоимость ссылки</h4>
+                    <h2>200 баллов</h2>
+                    <p>ТиЦ Вашего сайта от 10</p>
+                    <h2>50 баллов</h2>
+                    <p>ТиЦ Вашего сайта от 0 до 10</p>
+
+                </div>
+            </div>
+
+            <div class="form">
+                <p id="form-href"><b>Получить ссылку</b> </p>
+                <div class="wrapper-form">
+                    <div class="data">
+                        <p class="param param1">Ваше имя</p>
+                        <p class="param param2">Номер телефона</p>
+                        <p class="param param3">Название франшизы</p>
+                    </div>
+                    <form name="contact_form" action="" onsubmit="return validate();">
+                        <input id="name" onkeyup="check()" type="text" name="name" required  placeholder="Представьтесь, пожалуйста"> <br>
+                      
+                        <input id="phone" onkeyup="check()" type="text" name="tel" required placeholder="Для начисления баллов и связи с Вами">
+                        <br>
+                     
+                        <input id="franchise" onkeyup="check()" type="text" name="franchise" required placeholder="Например, Subway"> <br>
+                       
+                        <input id="button" type="submit" value="Получить ссылку">
+                    </form>
+                </div>
+            </div>
+
+
+            <p id="notAll"><b>Это еще не все...</b>Вы можете заработать дополнительные баллы, если разместите на своём
+                сайте
+                новость, интервью или статью БИБОСС о Вашей компании с активной ссылкой! 50 баллов за активную ссылку на
+                новость!</p>
+        </main>
+
+    </div>
+    <footer>
+        <div class="logo-footer"><img src="img/logo-footer.png" alt=""></div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
+
+</html>
