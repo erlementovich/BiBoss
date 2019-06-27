@@ -7,9 +7,13 @@ header {
   }
 }
 
-#biBoss,
+#biBoss {
+  margin-bottom: 34px;
+  padding-right: 8px;
+}
 #ball {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  padding-right: 2px;
 }
 .mac {
   text-align: center;
@@ -18,7 +22,15 @@ header {
   background-image: url("../img/mac.png");
   background-position: center center;
   background-repeat: no-repeat;
+  margin-bottom: 33px;
 }
 .href1 {
-  padding-top: 165px;
+  padding-top: 163px;
+  padding-right: 4px;
+  font-family: TahomaRegular;
+  a {
+    color: #5c37ef !important;
+    text-decoration: none;
+    border-bottom: 1px solid #5c37ef;
+  }
 }

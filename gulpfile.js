@@ -113,7 +113,11 @@ gulp.task('image', function () {
 //**** ****//
 
 // Шрифты
-
+gulp.task('fonts', function () {
+    return gulp.src(['app/fonts/*.ttf'])
+        .pipe(gulp.dest('dist/fonts'))
+        .pipe(browserSync.stream());
+})
 //**** ****//
 
 //Будем следить за файлами
@@ -121,17 +125,18 @@ gulp.task('watch', function () {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
     gulp.watch('app/js/**/*.js', gulp.parallel('js'));
     gulp.watch('app/**/*.html', gulp.parallel('html'));
-    gulp.watch('app/img/**/*.*', gulp.parallel('image'))
+    gulp.watch('app/img/**/*.*', gulp.parallel('image'));
+    gulp.watch('app/fonts/*.*', gulp.parallel('fonts'))
 });
 //**** ****//
 
 
 //Построим проект
-gulp.task('build', gulp.series('clean', gulp.parallel('sass', 'js', 'html', 'image')));
+gulp.task('build', gulp.series('clean', gulp.parallel('fonts','sass', 'js', 'html', 'image')));
 //**** ****//
 
 
 
 //Построим, запустим и будем смотреть
-gulp.task('default', gulp.parallel('html', 'sass', 'js', 'image', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('fonts','html', 'sass', 'js', 'image', 'browser-sync', 'watch'));
 //**** ****//

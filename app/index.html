@@ -29,16 +29,23 @@
 
         <main>
             <div class="info">
-                <p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании </p>
+                <p>БИБОСС даёт возможность получить бесплатные баллы – нужно лишь разместить на сайте компании любую из
+                    ссылок: </p>
                 <ul>
-                    <li>Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</li>
-                    <li>Текстовая ссылка «Наша франшиза на БИБОСС»</li>
-                    <li>Кнопка “Нравится франшиза” + счетчик популярности</li>
+                    <li>
+                        <p> Текстовая ссылка «Франшиза <span>[Название]</span> на БИБОСС»</p>
+                    </li>
+                    <li>
+                        <p> Текстовая ссылка «Наша франшиза на БИБОСС»</p>
+                    </li>
+                    <li>
+                        <p> Кнопка “Нравится франшиза” + счетчик популярности</p>
+                    </li>
                 </ul>
             </div>
 
             <div class="why">
-                <p>Зачем нужны <a href="#">баллы</a>?</p>
+                <p>Зачем нужны <a id="why-href" href="#">баллы</a>?</p>
                 <h4>Больше баллов — выше позиция в выдаче категории</h4>
             </div>
 
@@ -46,10 +53,18 @@
                 <div class="rules">
                     <h4>Правила размещения ссылки</h4>
                     <ul>
-                        <li>Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt; )</li>
-                        <li>Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта</li>
-                        <li>Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу</li>
-                        <li>При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</li>
+                        <li>
+                            <p> Ссылка должна быть индексируемой (без тегов &lt;noindex&gt; и &lt;nofollow&gt; )</p>
+                        </li>
+                        <li>
+                            <p> Ссылка должна быть читаемой, не скрытой от глаз посетителя сайта</p>
+                        </li>
+                        <li>
+                            <p> Ссылка должна быть размещена на странице сайта, посвящённой франчайзингу</p>
+                        </li>
+                        <li>
+                            <p> При размещении ссылок на другие порталы о франчайзинге – баллы обнуляются.</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="cost">
@@ -71,13 +86,16 @@
                         <p class="param param3">Название франшизы</p>
                     </div>
                     <form name="contact_form" action="" onsubmit="return validate();">
-                        <input id="name" onkeyup="check()" type="text" name="name" required  placeholder="Представьтесь, пожалуйста"> <br>
-                      
-                        <input id="phone" onkeyup="check()" type="text" name="tel" required placeholder="Для начисления баллов и связи с Вами">
+                        <input id="name" onkeyup="check()" type="text" name="name" required
+                            placeholder="Представьтесь, пожалуйста"> <br>
+
+                        <input id="phone" onkeyup="check()" type="text" name="tel" required
+                            placeholder="Для начисления баллов и связи с Вами">
                         <br>
-                     
-                        <input id="franchise" onkeyup="check()" type="text" name="franchise" required placeholder="Например, Subway"> <br>
-                       
+
+                        <input id="franchise" onkeyup="check()" type="text" name="franchise" required
+                            placeholder="Например, Subway"> <br>
+
                         <input id="button" type="submit" value="Получить ссылку">
                     </form>
                 </div>

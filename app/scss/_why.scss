@@ -1,17 +1,23 @@
 .why {
-    text-align: center;
-    background: #f7f8fa;
-    height: 120px;
-    border-radius: 5px;
-    
-   p {
-       padding-top: 30px;
-       margin-top: 0;
-       margin-bottom: 10px;
-   }
-   h4 {
-       margin: 0;
+  text-align: center;
+  background: #f7f8fa;
+  height: 120px;
+  border-radius: 5px;
+  margin-bottom: 4px;
 
-   }
-   
+  p {
+    padding-right: 7px;
+    padding-top: 31px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  #why-href {
+    color: #5c37ef !important;
+    text-decoration: none;
+    border-bottom: 1px solid #5c37ef;
+  }
+  h4 {
+    margin: 0;
+    padding-right: 7px;
+  }
 }
